@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+ <script src="js/funcion.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <header>
+    <div id="logo"><a href="index.html"><img src="img\logo.jpg" alt="" width="200" height="100"></a></div>
+
+    
+ <h1>Labaya</h1>
+    <br>
+    <br>
+    <br>
+  </header>
+  <br>
+  <nav class="navbar navbar-expand-lg ">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">
+              <p> Inicio</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre nosostros.html">
+              <p>Sobre Nosotros</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">
+              <p>Productos</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">
+              <p>Galería</p>
+            </a> </li>
+          <li class="nav-item">
+            <a class="nav-link" href="preguntas.html">
+              <p>Preguntas frecuentes</p>
+            </a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">
+              <p>Contactenos</p>
+            </a>
+          </li>
+       
+         
+        </ul>
+
+         
+        </div>
+      </div>
+    </nav>
+    <main>
+       <section class="contenido-form">
+             
+       
+          
+          <div class="containerC">
+                 <h3 >Formulario de contacto</h3>
+                 <br><p>*También puede contactarnos a traves del Gmail: labaya@gmail.com
+</p><br>
+        
+            <form id="basic-form" action="" method="post"onsubmit="envio()">
+              <p>
+                <label for="name"><b>Nombre</b>  <span>(Minimo 3 caracteres)</span></label>
+                <input id="name" name="name" minlength="3" type="text"placeholder="Nombre"  required>
+              </p>
+              
+              <p>
+                  <label for="lname"><b>Apellidos</b> </label>
+                  <input type="text" id="lname" name="lastname" placeholder="Apellidos"> 
+              </p>
+              <p>
+                <label for="email"><b>E-Mail</b>  <span>(Obligatorio)</span></label>
+                <input id="email" type="email" name="email" placeholder="email"required>
+              </p>
+              <p>
+                <label for="fnac"><b> Fecha de nacimiento</b></label>
+                <input type="date" id="fnac" name="trip-nac"
+                value="2022-08-31"
+                min="1910-01-01" max="2018-12-31" required>
+         
+              </p>
+             
+              <p>
+
+                <b>Genero:</b> <br>
+            
+                <input type="radio" name="genero" value="Hombre"> Hombre<br>
+            
+                <input type="radio" name="genero" value="Mujer"> Mujer<br>
+            
+                
+            
+              </p>
+            <p>
+              <label for="country"><b>Provincia donde vive</b> </label>
+              <select id="country" name="country" >
+                <option value="Alajuela">Alajuela</option>
+                <option value="San-José">San José</option>
+                <option value="Cartago">Cartago</option>
+                <option value="Heredia">Heredia</option>
+                <option value="Guanacaste">Guanacaste</option>
+                <option value="Puntarenas">Puntarenas</option>
+                <option value="Limón">Limón</option>
+              
+                <option value="Foraneo">Vive en el extranjero</option>
+               
+              </select>
+            </p>
+                <p>  <label for="message"><b>Mensaje:</b> </label>
+                  <textarea id="message"  placeholder="Escribe algo" style="height:200px "oninput ="longitudMsg()" ></textarea></p>
+     
+                  <br> <input class="submit" type="submit" onclick="ageCalculator()">
+                  <br>
+                  <br>
+                  <input type="reset" >
+          </form>
+          </div> 
+      
+             
+  
+  
+      </section>     
+      <div id="google_translate_element"><h3>Cambiar idioma:</h3></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    </main>
+    <footer>
+ 
+      
+   
+      <a class="nav-link" href="autor.html">
+        <h3>Información del autor del sitio</h3>
+      </a>
+      <img src="img/logo.jpg" alt=""> 
+   <br><h3 class="titulo-final"> &copy;Labaya|2022</h3>
+
+
+      
+        
+      </footer>
+    
+    </body>
+    
+    </html>
