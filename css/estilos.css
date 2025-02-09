@@ -19,12 +19,15 @@ header{
     
 }
 
-header h1{
-    color: #FDF0D5;
-    position: relative;
-    top :10px;
-    justify-content: center;
-    font-size:60px;
+header h1 {
+  color: #FDF0D5;
+  font-size: 60px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%); /* Centra verticalmente */
+  text-align: center;
+  margin: 0;
 }
 
 header img{
